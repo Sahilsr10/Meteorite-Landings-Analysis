@@ -1,8 +1,6 @@
-# Meteorite-Landings-Analysis
+# Meteorite Landings Analysis
 
 A comprehensive data analysis project examining global meteorite landing patterns, classifications, and characteristics using the NASA Meteorite Landings dataset.
-
-![Meteorite](https://raw.githubusercontent.com/username/meteorite-analysis/main/images/meteorite-banner.jpg)
 
 ## 📊 Project Overview
 
@@ -120,7 +118,7 @@ The analysis uses the NASA Meteorite Landings dataset, which includes:
 
 ## 👤 Author
 
-Your Name - [GitHub Profile](https://github.com/username)
+Your Name - [GitHub Profile](https://github.com/)
 
 ## 🔗 References
 
