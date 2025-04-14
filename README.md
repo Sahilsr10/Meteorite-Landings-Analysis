@@ -79,7 +79,7 @@ pip install -r requirements.txt
 ### Running the Analysis
 
 ```bash
-python meteorite_analysis.py
+python CA2.py
 ```
 
 ## 📁 Project Structure
@@ -90,7 +90,7 @@ meteorite-analysis/
 │   └── Meteorite_Landings.csv
 ├── images/
 │   └── [visualization outputs]
-├── meteorite_analysis.py
+├── CA2.py
 ├── requirements.txt
 └── README.md
 ```
