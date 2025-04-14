@@ -118,7 +118,7 @@ The analysis uses the NASA Meteorite Landings dataset, which includes:
 
 ## 👤 Author
 
-Your Name - [GitHub Profile](https://github.com/Sahilsr10)
+Sahil Srivastava - [GitHub Profile](https://github.com/Sahilsr10)
 
 ## 🔗 References
 
