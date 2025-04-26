@@ -82,18 +82,6 @@ pip install -r requirements.txt
 python CA2.py
 ```
 
-## 📁 Project Structure
-
-```
-meteorite-analysis/
-├── data/
-│   └── Meteorite_Landings.csv
-├── images/
-│   └── [visualization outputs]
-├── CA2.py
-├── requirements.txt
-└── README.md
-```
 
 ## 📝 Dataset Information
 
