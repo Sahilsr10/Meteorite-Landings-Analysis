@@ -1,97 +1,129 @@
-🌎 Meteorite Landings Analysis & Predictive Modeling
+# Meteorite Data Analysis Project 🌠
 
-A comprehensive data science project exploring global meteorite landings using NASA’s dataset, with predictive modeling, geospatial clustering, and statistical analysis.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Pandas](https://img.shields.io/badge/Pandas-latest-green)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-latest-orange)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-latest-red)
+![Seaborn](https://img.shields.io/badge/Seaborn-latest-purple)
 
-📊 Project Overview
+## Overview
 
-This project analyzes meteorite landing patterns, temporal trends, classification insights, and mass distributions. It integrates advanced ML techniques like PCA, DBSCAN, and Random Forest classification to uncover deeper scientific patterns and predictive insights.
+This project conducts a comprehensive analysis of meteorite landings data, exploring geospatial patterns, temporal trends, and meteorite characteristics. The analysis incorporates statistical methods, machine learning, and interactive visualizations to derive meaningful insights from the Meteorite Landings dataset.
 
-🔍 Key Features
-	•	Geospatial Analysis: Visualize and cluster landing sites globally using DBSCAN
-	•	Temporal Trend Analysis: Track meteorite landings and mass averages over time
-	•	Classification Insights: Explore meteorite types and mass variations
-	•	Predictive Modeling: Predict “Fell” vs “Found” meteorites using Random Forest (87% accuracy)
-	•	Statistical Testing: Perform hypothesis testing, Z-score, and outlier detection
-	•	Dimensionality Reduction: Apply PCA for feature embedding and visualization
-	•	Interactive Mapping: Create a Folium-based world map with meteorite landings
+## Objectives
 
-🧪 Analysis Components
-	1.	Data Cleaning & Preprocessing
-	•	Handling missing values
-	•	Data type conversions
-	•	Outlier detection via IQR and Z-Score
-	2.	Exploratory Data Analysis (EDA)
-	•	Geospatial mapping
-	•	Temporal landing trends
-	•	Mass and class distribution analysis
-	•	“Fell” vs “Found” comparisons
-	3.	Machine Learning and Statistical Analysis
-	•	Random Forest Classification (87% Accuracy)
-	•	Principal Component Analysis (PCA) for clustering
-	•	KMeans Clustering on meteorite features
-	•	DBSCAN Geospatial Clustering for landing site groupings
-	•	Hypothesis Testing (t-tests) for mass differences
-	4.	Visualization
-	•	Geospatial scatter plots
-	•	Heatmaps and time series plots
-	•	Mass distributions and boxplots
-	•	Folium interactive map with clustered meteorite points
+1. Analyze geospatial patterns in meteorite landings
+2. Identify influential features for meteorite discovery
+3. Predict whether a meteorite was 'Fell' (observed falling) or 'Found' using machine learning
 
-📈 Key Findings
-	•	Clear geospatial clustering of meteorite landings across continents.
-	•	Observable temporal trends in meteorite discovery rates.
-	•	Significant statistical differences between “Fell” and “Found” meteorites.
-	•	Dimensionality reduction via PCA revealed hidden structures among meteorite features.
-	•	DBSCAN identified dense regions of meteorite impacts without prior assumptions.
-	•	Machine Learning model accurately classified meteorites with high predictive performance.
+## Features
 
-🛠️ Technologies Used
-	•	Python: Main programming language
-	•	Pandas, NumPy: Data wrangling and computation
-	•	Scikit-learn: Machine learning (Random Forest, PCA, KMeans, DBSCAN)
-	•	Seaborn, Matplotlib: Data visualization
-	•	SciPy: Statistical testing
-	•	Folium: Interactive mapping and spatial visualization
+### Data Preparation & Cleaning
+- Missing value detection and imputation
+- Outlier identification using IQR and Z-score methods
+- Data integrity verification and preprocessing
 
-🚀 Getting Started
+### Exploratory Data Analysis
+- Geospatial visualization of landing coordinates
+- Temporal trend analysis of landing frequency and mass
+- Classification-based insights on meteorite types
+- Distribution analysis of meteorite characteristics
 
-Prerequisites
-	•	Python 3.7+
-	•	Required libraries: pandas, matplotlib, numpy, seaborn, scipy, scikit-learn, folium
+### Statistical Analysis
+- Hypothesis testing (T-test) to compare 'Fell' vs 'Found' meteorites
+- Correlation and covariance analysis between features
+- Probability distribution modeling of meteorite mass
+- Q-Q plots for normality assumption verification
 
-Installation
+### Advanced Analytics
+- Geospatial clustering using DBSCAN algorithm
+- Random Forest classification to predict 'Fell' vs 'Found' status
+- Feature importance analysis for predictive modeling
+- Feature embedding and clustering using PCA and K-Means
+
+### Interactive Visualization
+- Dynamic map visualization with Folium
+- Cluster analysis with visual representation
+- Interactive meteorite landing map with detailed popups
+
+## Key Findings
+
+- Significant patterns in the geographical distribution of meteorite landings
+- Temporal trends in meteorite discoveries over years
+- Mass distribution varies significantly across meteorite classes
+- Year of discovery is a crucial factor in predicting whether a meteorite was observed falling or found later
+- Successful 'Fell' vs 'Found' classification with Random Forest model
+- Identification of potential landing clusters using DBSCAN
+
+## Visualizations
+
+The project includes various visualizations:
+
+- Scatter plots of geographical landing locations
+- Time series analysis of meteorite discoveries
+- Distribution plots for meteorite mass
+- Bar charts for class comparisons
+- Heatmaps for correlation analysis
+- Interactive map of landing sites
+
+## Machine Learning Implementation
+
+- **Model**: Random Forest Classifier
+- **Features**: Mass, year, latitude, longitude, and meteorite class
+- **Target**: Predicting whether a meteorite was observed falling ('Fell') or discovered later ('Found')
+- **Performance**: Detailed in classification report with precision, recall, and F1-score metrics
+
+## Technical Requirements
+
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- scipy
+- folium
+
+## Usage
+
+```python
 # Clone the repository
 git clone https://github.com/yourusername/meteorite-analysis.git
-cd meteorite-analysis
 
-# Create virtual environment (recommended)
-python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
-
-# Install dependencies
+# Install required packages
 pip install -r requirements.txt
 
-Running the Analysis
-python CA3.py
+# Run the analysis
+python meteorite_analysis.py
+```
 
-📚 Dataset Information
-	•	Dataset: NASA Meteorite Landings Dataset
-	•	Attributes: Name, Mass, Year, Latitude, Longitude, Classification, Fall Type (“Fell”/“Found”)
+## Dataset
 
-📈 Future Improvements
-	•	Integrate real-time meteorite detection feeds for live updates
-	•	Build a dashboard using Plotly Dash or Streamlit
-	•	Expand classification using advanced deep learning (e.g., XGBoost, Neural Networks)
-	•	Cross-reference geological data for deeper spatial correlation insights
+The analysis uses the "Meteorite_Landings.csv" dataset, which contains records of meteorites that have fallen to Earth. The dataset includes features such as:
 
-📄 License
+- Name of the meteorite
+- Mass in grams
+- Year of discovery/fall
+- Latitude and longitude coordinates
+- Classification type
+- Whether it was observed falling ('Fell') or discovered later ('Found')
 
-MIT License
+## Limitations & Future Work
 
-👤 Author
+- Dataset may contain inaccuracies or missing values
+- Class imbalance in the 'fall' column might affect prediction performance
+- Future work could extend to time-series modeling or deep learning approaches
+- Additional external data sources could enhance the analysis
 
-Sahil Srivastava - GitHub Profile
+## License
 
-🔗 References
-	•	NASA Open Data Portal
-	•	The Meteoritical Society
+[MIT License](LICENSE)
+
+## Contributors
+
+- [Your Name](https://github.com/yourusername)
+
+## Acknowledgments
+
+- The Meteoritical Society for the dataset
+- Contributors to the Python data science ecosystem
